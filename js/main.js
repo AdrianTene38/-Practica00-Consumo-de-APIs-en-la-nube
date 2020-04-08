@@ -21,11 +21,7 @@ function bus() {
     
     var detalles = "";
  
-
-
-
-    req.open("GET", "http://www.omdbapi.com/?apikey=eabd474&s="
-    + porNombre +  "&" + "page=" +  numero_pag, false);
+    req.open("GET", "http://www.omdbapi.com/?apikey=eabd474&s="+ porNombre +  "&" + "page=" +  numero_pag, false);
 
     if (porNombre == "") {
         detalles = "<tr>" +
@@ -67,7 +63,6 @@ function bus() {
                 css('display', 'table-row').animate({ opacity: 1 }, 300);
         });
         rowsTotal = "";
-        
     });
 
 
