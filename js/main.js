@@ -53,9 +53,7 @@ function bus() {
         for (i = 0; i < numPages; i++) {
             pageNum = i + 1;
             $('.menu').append('<a href="#" rel="' + i + '">' + pageNum + '</a> ');
-           
         }
-        i=0;
         $('#mia tbody tr').hide();
         $('#mia tbody tr').slice(0, rowsShown).show();
         $('.menu a:first').addClass('active');
@@ -68,7 +66,9 @@ function bus() {
             $('#mia tbody tr').css('opacity', '0.0').hide().slice(startItem, endItem).
                 css('display', 'table-row').animate({ opacity: 1 }, 300);
         });
+        rowsTotal = "";
+        
     });
-    
-    
+
+
 }
