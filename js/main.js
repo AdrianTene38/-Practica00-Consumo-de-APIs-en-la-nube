@@ -53,9 +53,9 @@ function bus() {
         for (i = 0; i < numPages; i++) {
             pageNum = i + 1;
             $('.menu').append('<a href="#" rel="' + i + '">' + pageNum + '</a> ');
-            pageNum=0;
+           
         }
-
+        i=0;
         $('#mia tbody tr').hide();
         $('#mia tbody tr').slice(0, rowsShown).show();
         $('.menu a:first').addClass('active');
@@ -69,5 +69,6 @@ function bus() {
                 css('display', 'table-row').animate({ opacity: 1 }, 300);
         });
     });
+    
     
 }
