@@ -1,6 +1,7 @@
 var prueba;
 var result = "";
 var req = new XMLHttpRequest();
+
 function bus() {
 
     var result = "";
@@ -21,6 +22,11 @@ function bus() {
     var detalles = "";
  
 
+
+
+    req.open("GET", "http://www.omdbapi.com/?apikey=eabd474&s="
+    + porNombre +  "&" + "page=" +  numero_pag, false);
+
     if (porNombre == "") {
         detalles = "<tr>" +
             "<td colspan='5'> Sin informacion disponible...</td>" +
@@ -29,7 +35,7 @@ function bus() {
     } else {
         data.Search.forEach(movie => {
             detalles += "<tr>" +
-                "<td><a href='#' onclick=\"buscarPorID('" + movie.imdbID + "')\">Mas detalles </td>" +
+                "<td><a href='#' onclick=\" "+  movie.imdbID + "')\">Mas detalles </td>" +
                 "<td>" + movie.Title + "</td>" +
                 "<td>" + movie.Year + "</td>" +
                 "<td>" + movie.Type + "</td>" +
@@ -40,14 +46,16 @@ function bus() {
     }
    
     $(document).ready(function () {
-             
+        var pageNum ="";
         var rowsShown = 5;
         var rowsTotal = $('#mia tbody tr').length;
         var numPages = rowsTotal / rowsShown;
         for (i = 0; i < numPages; i++) {
-            var pageNum = i + 1;
+            pageNum = i + 1;
             $('.menu').append('<a href="#" rel="' + i + '">' + pageNum + '</a> ');
+            pageNum=0;
         }
+
         $('#mia tbody tr').hide();
         $('#mia tbody tr').slice(0, rowsShown).show();
         $('.menu a:first').addClass('active');
@@ -61,4 +69,5 @@ function bus() {
                 css('display', 'table-row').animate({ opacity: 1 }, 300);
         });
     });
+    
 }
