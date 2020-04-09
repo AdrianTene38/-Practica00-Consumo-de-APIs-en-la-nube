@@ -93,29 +93,6 @@ function buscarPorID(clave) {
 
     var data = JSON.parse(req.responseText)
 
-    console.log(data);
-    var year = data.Year;
-    console.log(year);
-    var rated = data.Rated;
-    console.log(rated);
-    var released = data.Released;
-    console.log(released);
-    var runtime = data.Runtime;
-    console.log(runtime);
-    var actors = data.Actors;
-    console.log(actors);
-    var country = data.Country;
-    console.log(country);
-    var director = data.Director;
-    console.log(director);
-    var genre = data.Genre;
-    console.log(genre);
-    var language = data.Language;
-    console.log(language);
-    var plot = data.Plot;
-    console.log(plot);
-    var poster = data.Poster;
-    console.log(poster);
 
     var template = document.getElementById('index').innerHTML;
 

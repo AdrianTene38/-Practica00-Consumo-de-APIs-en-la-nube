@@ -1,44 +1,72 @@
+
+   .navbar-brand{
+font-size: large;
+color: burlywood;
+   }
+
 .dat tr td
 {
     border-style: groove;
     border-color: black;
     border-width: 1px;
+    text-align: center;
+    background: url("fondo.jpg");
+    background-color: lightgray;
 }
 
 th{
-    background-color: #007bff;
+    
     border-style: groove;
     border-width: 1px;
     color: #fff;
     font-family: inherit;
     font-size: 1rem;
+    text-align: center;
+    background: url("fondo.jpg");
+    background-color: lightgray;
 }
 
 .dat{
     border-style: inset;
-    border-color: dodgerblue;
+    border-color:black;
     border-width: 2px;
+    background: url("fondo.jpg");
+    background-color: lightgray;
+}
+
+.h1{
+text-align: center;
+background: url("fondo.jpg");
+background-color: lightgray;
 }
 
 
 
+
 img{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+
 }
 
 th,td {
     padding: 0.4rem !important;
 }
 
-td {}
+td {
+    color: rebeccapurple;
+}
 body>div {
     box-shadow: 10px 10px 8px #888888;
     border: 2px solid black;
     border-radius: 10px;
+    text-align: center;
+    background-color: lightgray;
 }
 
 table{
+    margin-left: auto;
+  margin-right: auto;
     text-align: center;
 }
 
@@ -47,7 +75,9 @@ article#movies {
     margin-top: 5%;
     border-style: inset;
     padding: 5%;
-    border-color: dodgerblue;
+    border-color: black;
+    text-align: center;
+    background-color: lightgray;
 }
 
 .col-4.text-left {margin-left: unset;float: left;padding-left: 2%;}
@@ -63,6 +93,36 @@ h2.mb-4 {
 
 .row.no-gutters.d-flex.align-items-center.justify-content-center {
     margin-left: -37%;
+    
 }
 
 img.img-fluid {width: initial;height: initial;}
+
+
+
+ 
+.price_block {
+    width: 100%; 
+    color: #fff; 
+    float: left; 
+    list-style-type: none; 
+    transition: all 0.25s; 
+    position: relative; 
+    box-sizing: border-box;
+     
+    margin-bottom: 10px; 
+    border-bottom: 1px solid transparent; 
+}
+
+.menu {
+    list-style: none;
+    display: block;
+    float: left;
+    margin: 1em;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+    display: block;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 1.6em;
+    margin: 0 .5em;
+}
