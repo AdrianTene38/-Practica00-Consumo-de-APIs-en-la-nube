@@ -9,8 +9,10 @@ color: burlywood;
     border-style: groove;
     border-color: black;
     border-width: 1px;
+    font-size: large;
     text-align: center;
-    background: url("fondo.jpg");
+    font-size: 30px;
+    background-color: peru;
     background-color: lightgray;
 }
 
@@ -18,11 +20,11 @@ th{
     
     border-style: groove;
     border-width: 1px;
-    color: #fff;
+    color:black;
+font-size: 30px;
     font-family: inherit;
-    font-size: 1rem;
     text-align: center;
-    background: url("fondo.jpg");
+    background-color: peru;
     background-color: lightgray;
 }
 
@@ -41,12 +43,10 @@ background-color: lightgray;
 }
 
 
-
-
 img{
-    width: 60px;
-    height: 60px;
-
+    width: 100px;
+    height: 100px;
+background-color:orange
 }
 
 th,td {
@@ -54,11 +54,11 @@ th,td {
 }
 
 td {
-    color: rebeccapurple;
+    color:orangered
 }
 body>div {
     box-shadow: 10px 10px 8px #888888;
-    border: 2px solid black;
+
     border-radius: 10px;
     text-align: center;
     background-color: lightgray;
@@ -75,7 +75,7 @@ article#movies {
     margin-top: 5%;
     border-style: inset;
     padding: 5%;
-    border-color: black;
+   
     text-align: center;
     background-color: lightgray;
 }
